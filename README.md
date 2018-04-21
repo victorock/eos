@@ -9,7 +9,7 @@ devices.
 The following are the available tasks provided by this role for use in
 playbooks.
 
-* clear_sessions [[source]](https://github.com/privateip/ansible-eos/blob/devel/tasks/clear_sessions.yaml)
+* clear_sessions [[source]](https://github.com/privateip/ansible-eos/blob/devel/tasks/clear_sessions.yaml) [[docs]](https://github.com/privateip/ansible-eos/blob/devel/docs/clear_sessions.md)
 
 ## Variables
 The following are the list of variables this role accepts
