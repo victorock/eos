@@ -1,0 +1,16 @@
+---
+- name: verify connection is network_cli
+  fail:
+    msg: "clear_sessions requires connection type network_cli"
+  when: ansible_connection != 'network_cli'
+
+- name: get all configured sessions
+  cli:
+    command: "show configuration sessions | json"
+  register: output
+
+- name: clear the configuration session
+  cli:
+    command: "no configure session {{ item.key }}"
+  with_dict: "{{ sessions.json.sessions }}"
+  when: output.json.sessions

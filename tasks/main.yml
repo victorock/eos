@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-eos
+#
+- name: validate ansible_network_os == 'eos'
+  fail:
+    msg: this role only works with arista eos devices
+  when: ansible_network_os != 'eos'
