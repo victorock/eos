@@ -1,0 +1,20 @@
+---
+system:
+  command: show version
+  parser: show_version.yaml
+
+vlans:
+  command: show vlan
+  parser: show_vlan.yaml
+
+switchports:
+  command: show interface switchport
+  parser: show_interfaces_switchport.yaml
+
+ip_interfaces:
+  command: show ip interface
+  parser: show_ip_interface.yaml
+
+interfaces:
+  command: show interface
+  parser: show_interfaces.yaml

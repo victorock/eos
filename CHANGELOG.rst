@@ -2,8 +2,16 @@
 ansible-eos
 ===============================
 
-1.0.0
-=====
+v1.1.0
+======
+
+New Functions
+-------------
+
+- NEW ``get_facts`` Collect Ansible facts from device
+
+v1.0.0
+======
 
 Major Changes
 -------------

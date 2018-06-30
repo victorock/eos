@@ -1,0 +1,14 @@
+---
+- name: run command and parse output
+  cli:
+    command: "{{ ansible_eos_command }}"
+    parser: "{{ parser }}"
+  with_first_found:
+    - files:
+        - "{{ ansible_eos_parser }}"
+      paths:
+        - "{{ playbook_dir }}/parser_templates/eos"
+        - "/etc/ansible/parser_templates/eos"
+        - "{{ role_path }}/parser_templates/cli"
+  loop_control:
+    loop_var: parser

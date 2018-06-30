@@ -22,13 +22,14 @@ galaxy_info:
   # platforms is a list of platforms, and each platform has a name and a list of versions.
   #
   platforms:
-    - name: EOS
+    - name: eos
       version:
-        - all
+        - any
 
   galaxy_tags:
     - network
     - arista
     - eos
 
-dependencies: []
+dependencies:
+  - ansible_network.network-engine
