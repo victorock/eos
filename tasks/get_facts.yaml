@@ -7,7 +7,7 @@
 - name: run command and parse output
   include_tasks: run_cli.yaml
   vars:
-    ansible_eos_command: "{{ item.value.command }}"
-    ansible_eos_parser: "{{ item.value.parser }}"
+    eos_command: "{{ item.value.command }}"
+    eos_parser: "{{ item.value.parser }}"
   loop: "{{ lookup('dict', commands) }}"
   when: item.key in subset | default(item.key) or subset in ['*', 'all']

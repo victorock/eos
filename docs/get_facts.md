@@ -16,7 +16,7 @@ from the EOS device.
 - hosts: arista_eos
 
   roles:
-    - name privateip.ansible_eos
+    - name privateip.eos
       function: get_facts
 ```
 
@@ -34,7 +34,7 @@ For instance, the below will return only `interfaces` and `system` facts.
 - hosts: arista_eos
 
   roles:
-    - name privateip.ansible_eos
+    - name privateip.eos
       function: get_facts
       subset: 
         - interfaces
@@ -54,7 +54,7 @@ Below is an example of how to use the `get_facts` function with `tasks`.
   tasks:
     - name: collect facts from arista eos devices
       import_role:
-        name: privateip.ansible_eos
+        name: privateip.eos
         tasks_from: get_facts
       vars:
         subset:

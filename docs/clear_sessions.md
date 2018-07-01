@@ -16,7 +16,7 @@ EOS device.
   tasks:
     - name: clear all configuration sessions
       import_role:
-        name: privateip.ansible_eos
+        name: privateip.eos
         tasks_from: clear_sessions
 ```
 
