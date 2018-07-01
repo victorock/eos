@@ -18,3 +18,7 @@ ip_interfaces:
 interfaces:
   command: show interface
   parser: show_interfaces.yaml
+
+lldp:
+  command: show lldp neighbors
+  parser: show_lldp_neighbors.yaml

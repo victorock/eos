@@ -2,6 +2,18 @@
 eos
 ===============================
 
+v1.2.0
+======
+
+Major Changes
+-------------
+
+- Introduces ``lldp`` as a facts subset when running ``get_facts`` function
+
+- Now checks for the connection type to be set to ``network_cli`` in the
+  ``get_facts`` function and returns and error if it is not
+
+
 v1.1.0
 ======
 

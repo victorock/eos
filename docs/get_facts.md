@@ -62,12 +62,6 @@ Below is an example of how to use the `get_facts` function with `tasks`.
           - interfaces
 ```
 
-## Requirements
-The following is the list of requirements for using the this task:
-
-* Ansible 2.5 or later
-* Ansible Network Engine 2.5.2 or later
-
 ## Arguments
 
 ### subset 
@@ -78,10 +72,15 @@ facts you wish to return.
 
 The default value is `all`
 
+#### Current supported values for subset are
+- system
+- interfaces
+- vlans
+- switchports
+- ip_interfaces
+- lldp
+
 ## Notes
 None
 
-## Changelog
-
-* 1.0.0 - initial function added to the role
 

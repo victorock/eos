@@ -1,4 +1,4 @@
-# Clear sessions
+# Clear configuration sessions
 The `clear_sessions` function can be used to clear all configuration sessions
 on a device running the Arista EOS network operating system.  This function
 only works with the `network_cli` connection type and requires the the
@@ -20,18 +20,10 @@ EOS device.
         tasks_from: clear_sessions
 ```
 
-## Requirements
-The following is the list of requirements for using the this task:
-
-* Ansible 2.5 or later
-
 ## Arguments
 The ```clear_sessions``` task has no configurable arguments.
 
 ## Notes
 None
 
-## Changelog
-
-* 1.0.0 - initial function added to the role
 
