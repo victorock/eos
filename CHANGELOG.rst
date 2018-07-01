@@ -1,5 +1,5 @@
 ===============================
-ansible-eos
+eos
 ===============================
 
 v1.1.0
@@ -16,7 +16,7 @@ v1.0.0
 Major Changes
 -------------
 
-- Initial release of the ``ansible-eos`` role.
+- Initial release of the ``eos`` role.
 
 - This role provides a set of functions for working with Arista EOS based
   devices for performing operational and configuration tasks

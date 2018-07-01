@@ -1,4 +1,4 @@
-# ansible-eos
+# eos
 This role provides a set of functions for working with Arista EOS network
 devices.  
 
@@ -10,8 +10,8 @@ devices.
 The following are the available tasks provided by this role for use in
 playbooks.
 
-* clear_sessions [[source]](https://github.com/privateip/ansible-eos/blob/devel/tasks/clear_sessions.yaml) [[docs]](https://github.com/privateip/ansible-eos/blob/devel/docs/clear_sessions.md)
-* get_facts [[source]](https://github.com/privateip/ansible-eos/blob/devel/tasks/get_facts.yaml) [[docs]](https://github.com/privateip/ansible-eos/blob/devel/docs/get_facts.md)
+* clear_sessions [[source]](https://github.com/privateip/eos/blob/devel/tasks/clear_sessions.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/clear_sessions.md)
+* get_facts [[source]](https://github.com/privateip/eos/blob/devel/tasks/get_facts.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/get_facts.md)
 
 ## Variables
 The following are the list of variables this role accepts
