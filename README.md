@@ -1,41 +1,26 @@
 # eos
-This role provides a set of functions for working with Arista EOS network
-devices.  
+This Ansible Network role provides a set of network functions that are designed
+to work with Arista EOS network devices.  The functions included in this role
+include gathering facts from EOS devices, performing declarative configuration
+tasks and handling various operational tasks on the device.  
 
 ## Requirements
 * Ansible 2.5 or later
-* Ansible Network Engine 2.5.2 or later
+* Ansible Network Engine Role 2.5.3 or later
 
-## Tasks
-The following are the available tasks provided by this role for use in
-playbooks.
+## Functions
+This section provides a list of the availabe functions that are including
+in this role.  Any of the provided functions can be implemented in Ansible
+playbooks to perform automation activities on Arista EOS devices.
+
+Please see the documentation link for each function for details on how to use
+the function in an Ansible playbook.
 
 * clear_sessions [[source]](https://github.com/privateip/eos/blob/devel/tasks/clear_sessions.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/clear_sessions.md)
 * get_facts [[source]](https://github.com/privateip/eos/blob/devel/tasks/get_facts.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/get_facts.md)
-
-## Variables
-The following are the list of variables this role accepts
-
-None
-
-## Modules
-The following is a list of modules that are provided by this role.
-
-None
-
-## Plugins
-The following is a list of plugins that are provided by this role.
-
-None
-
-## Dependencies
-The following is the list of dependencies on other roles this role requires.
-
-None
 
 ## License
 GPLv3
 
 ## Author Information
 Peter Sprygada (privateip)
-
