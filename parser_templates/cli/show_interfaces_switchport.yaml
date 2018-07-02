@@ -54,23 +54,26 @@
   register: interfaces
 
 - name: populate facts template
-  register: switchports
+  register: interfaces
   export: yes
+  export_as: dict
   extend: arista_eos
   loop: "{{ interfaces }}"
   json_template:
     template:
-      - key: name
-        value: "{{ item.name.matches.0 }}"
-      - key: enabled
-        value: "{{ item.enabled is defined }}"
-      - key: admin_mode
-        value: "{{ item.admin_mode.matches.0 }}"
-      - key: oper_mode
-        value: "{{ item.oper_mode.matches.0 }}"
-      - key: mac_address_learning
-        value: "{{ item.address_learning is defined }}"
-      - key: access_vlan
-        value: "{{ item.access_vlan.matches.0 }}"
-      - key: trunk_native_vlan
-        value: "{{ item.trunk_native_vlan.matches.0 }}"
+      - key: "{{ item.name.matches.0 | expand_interface_name }}"
+        object:
+          - key: switchport
+            object:
+              - key: enabled
+                value: "{{ item.enabled is defined }}"
+              - key: admin_mode
+                value: "{{ item.admin_mode.matches.0 }}"
+              - key: oper_mode
+                value: "{{ item.oper_mode.matches.0 }}"
+              - key: mac_address_learning
+                value: "{{ item.address_learning is defined }}"
+              - key: access_vlan
+                value: "{{ item.access_vlan.matches.0 }}"
+              - key: trunk_native_vlan
+                value: "{{ item.trunk_native_vlan.matches.0 }}"

@@ -11,7 +11,7 @@
       - key: neighbors
         elements:
           - key: port
-            value: "{{ item.matches.0 }}"
+            value: "{{ item.matches.0 | expand_interface_name }}"
           - key: neighbor
             value: "{{ item.matches.1.split('.')[0] }}"
           - key: neighbor_port

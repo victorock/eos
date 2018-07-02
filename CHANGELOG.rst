@@ -2,6 +2,15 @@
 eos
 ===============================
 
+v1.2.1
+======
+
+Minor Changes
+-------------
+- updated lldp parser template to expand local port interface name
+- updated switchport parser template to expand interface
+- moved switchport facts into interface tree
+
 v1.2.0
 ======
 
