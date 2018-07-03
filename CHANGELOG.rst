@@ -2,13 +2,31 @@
 eos
 ===============================
 
+In Progress
+===========
+
+Major Changes
+-------------
+
+- NEW ``eos_capabilities`` module 
+
+
+Minor Changes
+-------------
+
+- Device capability facts are now available to the parser templates
+
+
 v1.2.1
 ======
 
 Minor Changes
 -------------
+
 - updated lldp parser template to expand local port interface name
+
 - updated switchport parser template to expand interface
+
 - moved switchport facts into interface tree
 
 v1.2.0
