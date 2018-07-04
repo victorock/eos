@@ -1,2 +1,6 @@
 ---
 # defaults file for eos
+#
+eos_config_source:
+  running: show running-config
+  startup: show startup-config

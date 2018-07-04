@@ -11,6 +11,7 @@
     eos_functions:
       - clear_sessions
       - get_facts
+      - get_config
       - noop
 
 - name: validate the requested function is supported

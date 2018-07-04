@@ -5,6 +5,12 @@ eos
 In Progress
 ===========
 
+New Functions
+-------------
+
+- NEW ``get_config`` Return the device configuration
+
+
 Major Changes
 -------------
 

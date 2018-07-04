@@ -19,6 +19,8 @@ the function in an Ansible playbook.
 * clear_sessions [[source]](https://github.com/privateip/eos/blob/devel/tasks/clear_sessions.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/clear_sessions.md)
 * get_facts [[source]](https://github.com/privateip/eos/blob/devel/tasks/get_facts.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/get_facts.md)
 
+* get_config [[source]](https://github.com/privateip/eos/blob/devel/tasks/get_config.yaml) [[docs]](https://github.com/privateip/eos/blob/devel/docs/get_config.md)
+
 ## License
 GPLv3
 
