@@ -32,4 +32,4 @@ galaxy_info:
     - eos
 
 dependencies:
-  - ansible_network.network-engine
+  - ansible-network.network-engine
