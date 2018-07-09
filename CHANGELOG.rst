@@ -2,6 +2,14 @@
 eos
 ===============================
 
+devel
+=====
+
+Minor Changes
+-------------
+
+- added config parsers to the ``get_config`` function to parse device config
+
 v.1.3.0
 =======
 

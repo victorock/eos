@@ -4,6 +4,10 @@ saved configuration from an Arista EOS devices.  This function is only
 supported over `network_cli` connections and must be configured to enter
 `enable` mode using `ansible_become`.  
 
+The `get_config` function will also parse the device active configuration into
+a set of host facts during its execution.  All of the parsed facts are stored
+in the ``arista_eos.config`` top level facts key.
+
 ## How to get the device configuration
 Retrieving the configuration from the device involves just calling the
 `get_config` function from the role.  By default, the `get_config` role will
