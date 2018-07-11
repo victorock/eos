@@ -10,6 +10,8 @@ Major Changes
 
 - NEW ``eos_bgp`` module
 
+- NEW ``eos_bgp_redistribution`` module
+
 Minor Changes
 -------------
 
