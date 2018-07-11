@@ -14,6 +14,8 @@ Major Changes
 
 - NEW ``eos_bgp_address_family`` module
 
+- NEW ``eos_bgp_peer_group`` module
+
 Minor Changes
 -------------
 
