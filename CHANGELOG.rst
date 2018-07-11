@@ -16,6 +16,8 @@ Major Changes
 
 - NEW ``eos_bgp_peer_group`` module
 
+- NEW ``eos_route_map`` module
+
 Minor Changes
 -------------
 
