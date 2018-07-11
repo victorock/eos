@@ -12,6 +12,8 @@ Major Changes
 
 - NEW ``eos_bgp_redistribution`` module
 
+- NEW ``eos_bgp_address_family`` module
+
 Minor Changes
 -------------
 
