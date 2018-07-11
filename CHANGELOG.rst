@@ -5,6 +5,11 @@ eos
 devel
 =====
 
+Major Changes
+-------------
+
+- NEW ``eos_bgp`` module
+
 Minor Changes
 -------------
 
