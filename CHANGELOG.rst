@@ -18,6 +18,8 @@ Major Changes
 
 - NEW ``eos_route_map`` module
 
+- NEW ``eos_prefix_list`` module
+
 Minor Changes
 -------------
 
