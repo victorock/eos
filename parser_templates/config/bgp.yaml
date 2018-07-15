@@ -42,7 +42,7 @@
       - key: router_id
         value: "{{ values.router_id.matches.0 }}"
       - key: maximum_paths
-        value: "{{ values.maxpaths.maches.0 }}"
+        value: "{{ values.maxpaths.matches.0 }}"
       - key: redistribute
         object:
           - key: connected
