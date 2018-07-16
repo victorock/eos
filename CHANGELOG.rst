@@ -5,10 +5,20 @@ eos
 devel
 =====
 
+New Functions
+-------------
+
+- NEW `load_config` Load a configuration file into the target device
+
+Major Changes
+-------------
+
+- added new lookup plugin `network_template`
+
 Minor Changes
 -------------
 
-- added config parsers to the ``get_config`` function to parse device config
+- added config parsers to the `get_config` function to parse device config
 
 v.1.3.0
 =======
@@ -16,13 +26,13 @@ v.1.3.0
 New Functions
 -------------
 
-- NEW ``get_config`` Return the device configuration
+- NEW `get_config` Return the device configuration
 
 
 Major Changes
 -------------
 
-- NEW ``eos_capabilities`` module 
+- NEW `eos_capabilities` module 
 
 Minor Changes
 -------------
@@ -54,10 +64,10 @@ v1.2.0
 Major Changes
 -------------
 
-- Introduces ``lldp`` as a facts subset when running ``get_facts`` function
+- Introduces `lldp` as a facts subset when running `get_facts` function
 
-- Now checks for the connection type to be set to ``network_cli`` in the
-  ``get_facts`` function and returns and error if it is not
+- Now checks for the connection type to be set to `network_cli` in the
+  `get_facts` function and returns and error if it is not
 
 
 v1.1.0
@@ -66,7 +76,7 @@ v1.1.0
 New Functions
 -------------
 
-- NEW ``get_facts`` Collect Ansible facts from device
+- NEW `get_facts` Collect Ansible facts from device
 
 v1.0.0
 ======
@@ -74,7 +84,7 @@ v1.0.0
 Major Changes
 -------------
 
-- Initial release of the ``eos`` role.
+- Initial release of the `eos` role.
 
 - This role provides a set of functions for working with Arista EOS based
   devices for performing operational and configuration tasks
@@ -83,5 +93,5 @@ Major Changes
 New Functions
 -------------
 
-- NEW ``clear_sessions`` Clears all configuration sessions found on the device
+- NEW `clear_sessions` Clears all configuration sessions found on the device
 

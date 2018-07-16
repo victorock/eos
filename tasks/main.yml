@@ -3,13 +3,14 @@
 #
 - name: validate ansible_network_os == 'eos'
   fail:
-    msg: this role only works with arista eos devices
+    msg: "this role only works with arista eos devices"
   when: ansible_network_os != 'eos'
 
 - name: set role supported functions
   set_fact:
     eos_functions:
       - clear_sessions
+      - load_config
       - get_facts
       - get_config
       - noop

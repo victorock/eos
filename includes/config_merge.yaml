@@ -1,0 +1,26 @@
+---
+- name: merge with existing configuration
+  block:
+    - name: enter configuration mode
+      cli:
+        command: configure
+
+    - name: load configuration lines
+      cli:
+        command: "{{ item }}"
+      loop: "{{ lookup('network_template', eos_config_file) }}"
+      changed_when: true
+
+    - name: leave configuration mode
+      cli:
+        command: end
+
+  rescue:
+    - name: leave configuration mode
+      cli:
+        command: end
+
+    - name: mark the host as failed
+      fail:
+        msg: "error loading configuration onto target device"
+
