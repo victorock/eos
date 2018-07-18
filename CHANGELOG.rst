@@ -2,6 +2,18 @@
 eos
 ===============================
 
+devel
+=====
+
+Minor Changes
+-------------
+
+- update loop_var for config includes
+
+- add ansible_network_os check to load_config function
+
+- filter `end` keyword when sending config to device
+
 v1.4.0
 ======
 

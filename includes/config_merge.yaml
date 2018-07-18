@@ -7,9 +7,12 @@
 
     - name: load configuration lines
       cli:
-        command: "{{ item }}"
+        command: "{{ line.strip() }}"
       loop: "{{ lookup('network_template', eos_config_file) }}"
       changed_when: true
+      loop_control:
+        loop_var: line
+      when: line != 'end'
 
     - name: leave configuration mode
       cli:

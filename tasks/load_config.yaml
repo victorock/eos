@@ -1,4 +1,9 @@
 ---
+- name: validate ansible_network_os == 'eos'
+  fail:
+    msg: "this role only works with arista eos devices"
+  when: ansible_network_os != 'eos'
+
 - name: validate required variable is set
   fail:
     msg: "missing required fact: config_file"
